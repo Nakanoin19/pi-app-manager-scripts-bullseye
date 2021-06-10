@@ -1,0 +1,11 @@
+name="ibus-mozc"
+package_name="ibus-mozc"
+description="日本語入力システム"
+run_preparing=false
+install(){
+    apt-get install -y ${package_name}
+}
+uninstall(){
+    apt-get purge ${package_name} ibus -y
+    apt-get autoremove --purge -y
+}

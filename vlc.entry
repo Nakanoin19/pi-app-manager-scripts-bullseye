@@ -1,0 +1,11 @@
+name="VLCメディアプレイヤー"
+package_name="vlc"
+description="様々な形式に対応したメディアプレイヤー"
+run_preparing=false
+install(){
+    apt-get install -y ${package_name}
+}
+uninstall(){
+    apt-get purge ${package_name} -y
+    apt-get autoremove --purge -y
+}
