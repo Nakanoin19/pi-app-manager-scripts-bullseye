@@ -1,6 +1,6 @@
 name="Noto-CJK-extra"
 package_name="fonts-noto-cjk-extra"
-description="CJK_Font"
+description="CJK(Chinese,Japanese,Korean)_Font"
 run_preparing=false
 install(){
     apt-get install -y ${package_name}
